@@ -1,0 +1,82 @@
+.header {
+  padding-top: 50px;
+  &__book {
+    max-width: 170px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-left: 31px;
+  }
+  &__phone-number {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  &__phone-text {
+    display: block;
+    font-size: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__phone {
+    &:hover {
+      .header__phone-number {
+        color: #ff7400;
+      }
+      .phone-icon {
+        fill: #ff7400;
+      }
+    }
+  }
+  &__order-btn {
+    width: 157px;
+    margin-left: 45px;
+  }
+}
+.menu {
+  display: flex;
+  margin-left: auto;
+  &__list {
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 51px;
+      width: 1px;
+      background-color: #ffffff;
+      margin-left: 21px;
+    }
+  }
+  &__list-item {
+    margin-left: 23px;
+  }
+  &__list-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    &:hover {
+      color: #ff7400;
+    }
+  }
+  &__cart {
+    margin-left: 36px;
+    &:hover {
+      .cart-icon {
+        fill: #ff7400;
+      }
+    }
+  }
+  &__close-btn {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    z-index: 20;
+  }
+}
