@@ -1,5 +1,5 @@
 .dishes {
-  padding-top: 132px;
+  padding: 132px 0 150px;
   &__title {
     text-align: center;
     margin-bottom: 139px;
@@ -24,6 +24,9 @@
   &__hamburger {
     &:not(:last-child) {
       margin-bottom: 29px;
+    }
+    &:hover {
+      color: #ff7400;
     }
   }
   &__hamburger-img {

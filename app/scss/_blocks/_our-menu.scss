@@ -1,0 +1,120 @@
+.our-menu {
+  display: flex;
+  align-items: center;
+  background-color: #c4c4c4;
+  background-image: url("../images/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 100px 0 226px;
+  &__title {
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 138px;
+  }
+  &__slider {
+    position: relative;
+    margin: 0 -5px;
+  }
+  &__slider-button {
+    width: 40px;
+    height: 40px;
+    background: #d67e34;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__slider-prev {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+  }
+  &__slider-next {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+  }
+  &__slide {
+    max-width: 350px;
+    border: none;
+    border-radius: 0;
+    margin: 0 5px;
+    padding: 80px 10px 30px;
+    background: #ffffff;
+    &--recommended {
+      position: relative;
+      &::before {
+        content: "RECOMMENDED";
+        position: absolute;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 7px 12px 11px;
+        background: #d67e34;
+        top: 0;
+        left: 0;
+        z-index: 5;
+      }
+    }
+  }
+  &__slide-image {
+    position: relative;
+  }
+  &__slide-img {
+    width: 100%;
+    background-color: #c8c7c7;
+    border-radius: 50%;
+  }
+  &__slide-weight {
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #d67e34;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    font-family: "Cookie", cursive;
+    font-size: 30px;
+    line-height: 33px;
+    color: #ffffff;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
+  &__slide-body {
+    padding: 22px 0 20px;
+    text-align: center;
+  }
+  &__slide-title {
+    margin-bottom: 17px;
+  }
+  &__slide-text {
+    max-width: 215px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__slide-footer {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #ffffff;
+  }
+  &__slide-link {
+    width: 220px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+}

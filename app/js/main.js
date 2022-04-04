@@ -40,4 +40,34 @@ $(function () {
       $(".hero__title--second-line").html("Наш ресторан");
     }
   });
+
+  $(".our-menu__slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="our-menu__slider-button our-menu__slider-prev" type="button"></button>',
+    nextArrow:
+      '<button class="our-menu__slider-button our-menu__slider-next" type="button"></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+        },
+      },
+    ],
+  });
 });

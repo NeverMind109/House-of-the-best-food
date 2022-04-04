@@ -40,6 +40,11 @@
       width: 70px;
     }
   }
+  .our-menu {
+    &__slide {
+      max-width: 300px;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .menu {
@@ -142,6 +147,11 @@
       height: 300px;
     }
   }
+  .our-menu {
+    &__slide {
+      margin: 0 auto;
+    }
+  }
 }
 @include media-breakpoint-down(lg) {
   .menu {
@@ -210,6 +220,14 @@
       margin-right: 0;
     }
   }
+  .our-menu {
+    &__title {
+      margin-bottom: 98px;
+    }
+    &__slide {
+      max-width: 250px;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
   .section-title {
@@ -260,7 +278,7 @@
     padding: 100px 0;
   }
   .dishes {
-    padding-top: 100px;
+    padding: 100px 0 126px;
     &__hamburger-img {
       width: 130px;
       height: 113px;
@@ -268,6 +286,12 @@
     &__hamburger-name {
       font-size: 22px;
       line-height: 25px;
+    }
+  }
+  .our-menu {
+    padding: 62px 0 106px;
+    &__slide {
+      max-width: 350px;
     }
   }
 }
@@ -397,10 +421,21 @@
     }
   }
   .dishes {
-    padding-top: 63px;
+    padding: 63px 0 126px;
     &__title-decor {
       display: block;
       margin-left: 0;
+    }
+  }
+  .our-menu {
+    &__slide {
+      max-width: 290px;
+    }
+    &__slide-body {
+      padding: 18px 0 20px;
+    }
+    &__slide-title {
+      margin-bottom: 21px;
     }
   }
 }
