@@ -1,0 +1,36 @@
+.promo {
+  background-color: #c4c4c4;
+  background-image: url("../images/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__layout {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  &__wrapper {
+    margin: 0;
+    padding: 80px 0 104px;
+  }
+  &__information {
+    text-align: left;
+    padding: 0;
+  }
+  &__title {
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  &__button {
+    padding: 0;
+  }
+  &__link {
+    width: 157px;
+  }
+}
