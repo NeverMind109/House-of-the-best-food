@@ -1,0 +1,45 @@
+.dishes {
+  padding-top: 132px;
+  &__title {
+    text-align: center;
+    margin-bottom: 139px;
+  }
+  &__title-decor {
+    margin-left: 10px;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__image {
+    padding: 0 15px 0 0;
+  }
+  &__img {
+    max-width: 100%;
+    background-color: #c4c4c4;
+    object-fit: cover;
+  }
+  &__dish {
+    padding: 0 0 0 15px;
+  }
+  &__hamburger {
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+  }
+  &__hamburger-img {
+    background-color: #c4c4c4;
+    margin-right: 30px;
+    object-fit: cover;
+  }
+  &__hamburger-name {
+    margin-right: 7px;
+  }
+  &__hamburger-line {
+    width: 160px;
+    border: 1px dashed #000000;
+    transform: translateY(100%);
+  }
+  &__hamburger-price {
+    margin-left: 11px;
+  }
+}

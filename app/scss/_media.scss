@@ -35,6 +35,11 @@
       height: 250px;
     }
   }
+  .dishes {
+    &__hamburger-line {
+      width: 70px;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .menu {
@@ -179,6 +184,32 @@
       margin-bottom: 40px;
     }
   }
+  .dishes {
+    &__title {
+      margin-bottom: 68px;
+    }
+    &__image {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__dish {
+      padding: 0;
+    }
+    &__hamburger {
+      &:not(:last-child) {
+        margin-bottom: 87px;
+      }
+    }
+    &__hamburger-img {
+      margin-right: 8px;
+    }
+    &__hamburger-name {
+      margin-right: 0;
+    }
+  }
 }
 @include media-breakpoint-down(md) {
   .section-title {
@@ -227,6 +258,17 @@
   }
   .history {
     padding: 100px 0;
+  }
+  .dishes {
+    padding-top: 100px;
+    &__hamburger-img {
+      width: 130px;
+      height: 113px;
+    }
+    &__hamburger-name {
+      font-size: 22px;
+      line-height: 25px;
+    }
   }
 }
 @include media-breakpoint-down(sm) {
@@ -352,6 +394,13 @@
     }
     &__link {
       width: 149px;
+    }
+  }
+  .dishes {
+    padding-top: 63px;
+    &__title-decor {
+      display: block;
+      margin-left: 0;
     }
   }
 }
