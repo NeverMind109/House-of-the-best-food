@@ -294,6 +294,21 @@
       max-width: 350px;
     }
   }
+  .reviews {
+    padding: 50px 0;
+    &__slide {
+      max-width: 750px;
+    }
+    &__slide-text {
+      margin-bottom: 28px;
+    }
+    &__slide-img {
+      margin: 0 auto 4px;
+    }
+    &__slide-position {
+      margin-bottom: 5px;
+    }
+  }
 }
 @include media-breakpoint-down(sm) {
   .section-title {
@@ -321,6 +336,7 @@
   }
   .hero {
     height: 100vh;
+    min-height: 600px;
     &__wrapper {
       max-width: 100%;
       margin: auto 0;
@@ -436,6 +452,12 @@
     }
     &__slide-title {
       margin-bottom: 21px;
+    }
+  }
+  .reviews {
+    padding: 11px 0 25px;
+    &__slide {
+      max-width: 290px;
     }
   }
 }
