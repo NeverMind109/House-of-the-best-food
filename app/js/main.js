@@ -23,21 +23,21 @@ $(function () {
   var w = $(window).width();
   if (w <= 576) {
     $(".hero__button").html("Меню");
-    $(".hero__title--first-line").html("Добро пожаловать");
-    $(".hero__title--second-line").html("В наш ресторан");
+    $(".hero__title-first-line").html("Добро пожаловать");
+    $(".hero__title-second-line").html("В наш ресторан");
   }
 
   $(window).on("resize", function () {
     var win = $(this); //this = window
     if (win.width() <= 576) {
       $(".hero__button").html("Меню");
-      $(".hero__title--first-line").html("Добро пожаловать");
-      $(".hero__title--second-line").html("В наш ресторан");
+      $(".hero__title-first-line").html("Добро пожаловать");
+      $(".hero__title-second-line").html("В наш ресторан");
     }
     if (win.width() > 576) {
       $(".hero__button").html("Посмотреть меню");
-      $(".hero__title--first-line").html("Добро пожаловать в");
-      $(".hero__title--second-line").html("Наш ресторан");
+      $(".hero__title-first-line").html("Добро пожаловать в");
+      $(".hero__title-second-line").html("Наш ресторан");
     }
   });
 
@@ -114,5 +114,18 @@ $(function () {
         $(".cooks__slider").slick("unslick");
       }
     }
+  });
+
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 0,
+        },
+        200
+      );
   });
 });

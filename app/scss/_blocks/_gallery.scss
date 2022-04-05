@@ -1,5 +1,24 @@
 .gallery {
+  position: relative;
   padding-top: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    background: #ff0000;
+    top: 230px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    background: #ff0000;
+    top: 230px;
+    right: 0;
+  }
   &__title {
     text-align: center;
     margin-bottom: 44px;

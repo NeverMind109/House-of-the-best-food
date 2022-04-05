@@ -164,12 +164,12 @@
   }
   .hero {
     &__title {
-      &--first-line {
+      &-first-line {
         text-align: center;
         font-size: 45px;
         line-height: 50px;
       }
-      &--second-line {
+      &-second-line {
         text-align: center;
         font-size: 55px;
         line-height: 60px;
@@ -353,11 +353,11 @@
       margin: auto 0;
     }
     &__title {
-      &--first-line {
+      &-first-line {
         font-size: 30px;
         line-height: 34px;
       }
-      &--second-line {
+      &-second-line {
         font-size: 40px;
         line-height: 46px;
       }
@@ -473,6 +473,12 @@
   }
   .gallery {
     padding-top: 71px;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
     &__title {
       margin-bottom: 66px;
     }
