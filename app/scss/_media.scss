@@ -45,6 +45,11 @@
       max-width: 300px;
     }
   }
+  .cooks {
+    &__img {
+      width: 300px;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .menu {
@@ -226,6 +231,12 @@
     }
     &__slide {
       max-width: 250px;
+    }
+  }
+  .cooks {
+    &__img {
+      width: 250px;
+      height: 380px;
     }
   }
 }
@@ -469,8 +480,30 @@
       display: block;
       margin-left: 0;
     }
+    &__image-show {
+      text-align: center;
+    }
     &__image-small {
       width: 290px;
+    }
+  }
+  .cooks {
+    padding: 71px 0 0;
+    &__title {
+      margin-bottom: 65px;
+    }
+    &__title-decor {
+      display: block;
+      margin-left: 0;
+    }
+    &__slide {
+      display: block;
+      text-align: center;
+      margin-bottom: 17px;
+    }
+    &__img {
+      width: 286px;
+      height: 379px;
     }
   }
 }

@@ -1,42 +1,25 @@
-.reviews {
-  background: #e6e5e5;
-  padding: 104px 0;
-  &__slider {
+.cooks {
+  padding: 100px 0 44px;
+  &__title {
     text-align: center;
+    margin-bottom: 92px;
+  }
+  &__title-decor {
+    margin-left: 10px;
   }
   &__slide {
-    max-width: 920px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
+    margin-top: 15px;
   }
-  &__slide-text {
-    font-style: italic;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
-    margin-bottom: 25px;
-  }
-  &__slide-img {
-    background: #c4c4c4;
-    border-radius: 50%;
-    margin: 0 auto 16px;
-  }
-  &__slide-position {
-    display: block;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 9px;
-  }
-  &__slide-name {
-    display: block;
-    font-size: 20px;
-    line-height: 27px;
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
   }
   .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: -50px;
     li {
       margin: 0 2px;
       width: 7px;
@@ -62,12 +45,12 @@
         font-size: 0;
         line-height: 0;
         background: #c4c4c4;
-        border: 1px solid #ff7400;
+        border: 1px solid #ffd5d5;
         border-radius: 50%;
       }
     }
   }
   .slick-dotted.slick-slider {
-    margin-bottom: 25px;
+    margin-bottom: 55px;
   }
 }
