@@ -460,4 +460,17 @@
       max-width: 290px;
     }
   }
+  .gallery {
+    padding-top: 71px;
+    &__title {
+      margin-bottom: 66px;
+    }
+    &__title-decor {
+      display: block;
+      margin-left: 0;
+    }
+    &__image-small {
+      width: 290px;
+    }
+  }
 }

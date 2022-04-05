@@ -75,6 +75,7 @@ $(function () {
     dots: true,
     autoplay: true,
     infinite: true,
+    speed: 300,
     arrows: false,
   });
 });

@@ -1,0 +1,17 @@
+.gallery {
+  padding-top: 100px;
+  &__title {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  &__title-decor {
+    margin-left: 10px;
+  }
+  &__list {
+    margin: 0;
+  }
+  &__image-small {
+    width: 100%;
+    max-width: 100%;
+  }
+}
