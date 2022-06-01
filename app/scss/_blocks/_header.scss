@@ -20,6 +20,7 @@
     line-height: 19px;
   }
   &__phone {
+    transition: color 0.3s, fill 0.3s;
     &:hover {
       .header__phone-number {
         color: #ff7400;
@@ -56,12 +57,14 @@
     font-size: 14px;
     line-height: 19px;
     color: #ffffff;
+    transition: color 0.3s;
     &:hover {
       color: #ff7400;
     }
   }
   &__cart {
     margin-left: 36px;
+    transition: fill 0.3s;
     &:hover {
       .cart-icon {
         fill: #ff7400;

@@ -129,3 +129,5 @@ $(function () {
       );
   });
 });
+
+new WOW().init();

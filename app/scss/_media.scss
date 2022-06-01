@@ -159,6 +159,16 @@
   }
 }
 @include media-breakpoint-down(lg) {
+  .animate__animated {
+    animation: none !important;
+  }
+  .animated {
+    animation: none !important;
+  }
+  .logo__img {
+    width: 45px;
+    height: 31px;
+  }
   .menu {
     left: 40%;
   }
@@ -491,6 +501,7 @@
     }
     &__image-small {
       width: 290px;
+      height: 300px;
     }
   }
   .cooks {

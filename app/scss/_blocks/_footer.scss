@@ -1,6 +1,10 @@
 .footer {
   background-color: #c4c4c4;
   background-image: url("../images/footer-img.jpg");
+  background-image: image-set(
+    "../images/footer-img.webp" type("image/webp"),
+    "../images/footer-img.jpg" type("image/jpg")
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

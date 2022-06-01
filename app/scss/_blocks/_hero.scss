@@ -1,5 +1,10 @@
 .hero {
-  background: url("../images/hero-image.jpg") no-repeat;
+  background-image: url("../images/hero-image.jpg");
+  background-image: image-set(
+    "../images/hero-image.webp" type("image/webp"),
+    "../images/hero-image.jpg" type("image/jpg")
+  );
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;

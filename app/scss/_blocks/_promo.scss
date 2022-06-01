@@ -1,6 +1,10 @@
 .promo {
   background-color: #c4c4c4;
   background-image: url("../images/promo-bg.jpg");
+  background-image: image-set(
+    "../images/promo-bg.webp" type("image/webp"),
+    "../images/promo-bg.jpg" type("image/jpg")
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

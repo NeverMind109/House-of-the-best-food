@@ -22,6 +22,7 @@
     padding: 0 0 0 15px;
   }
   &__hamburger {
+    transition: color 0.3s;
     &:not(:last-child) {
       margin-bottom: 29px;
     }
